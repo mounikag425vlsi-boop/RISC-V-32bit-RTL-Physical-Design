@@ -1,184 +1,189 @@
-# Top Module Generator
+<div align="center" style="border: 2px solid #ccc; padding: 20px; border-radius: 12px; width: 80%; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.15);">
+    <img
+        width="180"
+        height="220"
+        alt="Logo - SURE ProEd"
+        src="https://github.com/user-attachments/assets/88fa5098-24b1-4ece-87df-95eb920ea721"
+        style="border-radius: 10px;"
+    />
 
-This program takes a chip core verilog file as well as a json description for the full chip with the desired IO pads connections, and auto generates the top level module of the chip including all the io pads and their connections, as well as automatically adding the power/corner pads.
+  <h1 align="center" style="font-family: Arial; font-weight: 600; margin-top: 15px;">SURE ProEd (formerly SURE Trust) 
+      </h1>
+<h2 style="color: #2b6cb0; font-family: Arial;">Skill Upgradation for Rural youth Empowerment Trust</h2>
+</div>
 
-## Command Line Arguments
+<hr style="border: 0; border-top: 1px solid #ccc; width: 80%;" />
 
-The following are arguments that can be passed to `src/TopModuleGen.py`
+<div style="padding: 20px; border: 2px solid #ddd; border-radius: 12px; width: 90%; margin: auto; background: #fafafa; font-family: Arial;">
 
-<table>
-    <tr>
-        <th width="196">
-        Argument
-        </th>
-        <th >
-        Description
-        </th>
-    </tr>
-    <tr>
-        <td align="center">
-            <code>--design | -d  &lt;JSON file&gt; </code> <br> (Required)
-        </td>
-        <td align="justify">
-            Specifies The JSON description of the design.
-        </td>
-    </tr>
-    <tr>
-        <td align="center">
-            <code>--padsLibs | -p &lt;JSON file&gt;</code> <br> (Required)
-        </td>
-        <td align="justify">
-            Specifies the pad libraries JSON description.
-        </td>
-    </tr>
-        <tr>
-        <td align="center">
-            <code>--verilog | -v &lt;verilog file&gt;</code> <br> (Required)
-        </td>
-        <td align="justify">
-            The input verilog file containing the core module header definition.
-        </td>
-    </tr>
-    <tr>
-        </tr>
-        <td align="center">
-            <code>--output | -o &lt;file&gt;</code> <br> (Required)
-        </td>
-        <td align="justify">
-            Specifies The verilog output file. 
-        </td>
-    </tr>
-</table>
+<h2 style = "color:#333;"> Student Details </h2>
+<div align = "left" style ="margin: 20px; font-size: 16px;">
+    <p><strong>Name:</strong> <!--- Add your name---> </p>
+    <p><strong>Email ID:</strong> <!--- Add your mail id ---> </p>
+    <p><strong>College Name:</strong> <!--- Add your college name---> </p>
+    <p><strong>Branch/Specialization :</strong> <!--- Add your branch name---> </p>
+    <p><strong>College ID:</strong> <!--- Add your college ID---> </p>
+</div>
 
-## The Design JSON description
+<hr style="border: 0; border-top: 1px solid #ccc; width: 80%;" />
 
-### The Full Description
+<h2 style="color:#333;"> Course Details </h2>
+<div align="left" style="margin: 20px; font-size: 16px;">
+    <p><strong>Course Opted:</strong> <!--- Add your course name---> </p>
+    <p><strong>Instructor Name:</strong> <!--- Add your instructor name---> </p>
+</div>
+<div align="left" style="margin: 20px; font-size: 16px;">
+    <p><strong>Duration:</strong> <!--- Durations in months---> </p>
 
-The json description of the design goes as follows:
-```json
-    {
-    "design_name": <name of the top module>,
-    "pads_library": <name of the io library to use>,
-    "defines": <Any defines/macros to add>,
-    "includes": <Any includes to add>,
-    "module":{
-        "name": <name of the chip core>,
-        "pads": <list of the IO pads and their sources>
-    },
-    "extra_verilog: <any extra verilog lines that the user would like to be put as is in the top module>
-    }
-```
+<hr style="border: 0; border-top: 1px solid #ccc; width: 80%;" />
 
-### Using Guards:
-You can use guards in the defines or includes sections by following this format for the object. For example, below we provide a description for a guard block inside the includes section:
-```json
-{
-    "inlcudes": [{...},
-                {
-                    "condition":{
-                        "name": <The name of the guard>,
-                        "def": [{ //This will be translated to the `ifdef
-                            "name": <name of the first include>
-                        },
-                        {
-                            "name": <name of the second include>
-                        }
-                        ],
-                        "ndef":[ //This will be translated to the `ifndef
-                            {
-                                "name": <name of the first include>
-                            },
-                            {
-                                "name":<name of the second include>
-                            }
-                        ]
+<h2 style="color:#333;"> Trainer Details </h2>
+<div align="left" style="margin: 20px; font-size: 16px;">
 
-                    }
-                },
-                {...},
-                ....
-    ]
-}
-```
-The `def` and `ndef` sections are optional. But, at least on of them should exist inside a condition block.
+<p><strong>Trainer Name:</strong> <!–– Add trainer name ––></p>
+<p><strong>Trainer Email ID:</strong> <!–– Add trainer email ––></p>
+<p><strong>Trainer Designation:</strong> <!–– Add designation along with company––></p>
 
-Nested guards are supported. by starting an object in the list of objects under either `def` or `ndef` and starting it with `condition`, and following the same format.
+<hr style="border: 0; border-top: 1px solid #ccc; width: 80%;" />
 
-### defines Block
-It expects a list of objects that could either contain a `name: <name of the define>` or a [guard block](#using-guards)
+## **Table of Contents**
+- [Course Learning](#course-learning-to-be-edited-by-student)
+- [Projects Completed](#projects-completed)
+- [Project Introduction](#project-introduction)
+- [Technologies Used](#technologies-used)
+- [Roles and Responsibilities](#roles-and-responsibilities)
+- [Project Report](#project-report)
+- [Learnings from LST & SST](#learnings-from-lst--sst)
+- [Community Services](#community-services)
+- [Certificate](#certificate)
+- [Acknowledgments](#acknowledgments)
 
-```json
-    {
-        "defines":[
-            {
-                "name": <name of the define>
-            },
-            {<guard block>}
-        ]
-
-    }
-```
+<hr style="border: 0; border-top: 1px solid #ccc; width: 80%;" />
 
 
+## Overall Learning 
 
-### includes Block
-
-It expects a list of objects that could either contain a `name: <name of the include>` or a [guard block](#using-guards)
-
-```json
-    {
-        "includes":[
-            {
-                "name": <name of the include>
-            },
-            {<guard block>}
-
-        ]
-    }
-```
-
-### pads Block
-
-The pads description is simply listing objects, each of them describes one pad as follows:
-
-```json
-    {
-        "pads":[
-            {...},
-            {
-                "name":<name of the interface/pad>,
-                "size":<number>,
-                "type":"DIGITAL_OUTPUT",//The type
-                "output":< the connections from the core module to the pad>
-            },
-            {...},
-            ...
-        ]
-    }
-```
-
-**Note:** The pad name and its connection must have different names in order to produce valid verilog code.
-
-**Note:** If the `"type"` is `DIGITAL_OUTPUT` or `ANALOG_OUTPUT` then `"output":` should be used to describe the source connection from the core module. If it's a `DIGITAL_INPUT` or `ANALOG_OUTPUT`, then `"input":` should be used instead, and so on.
-
-There are optional fields that you can specify for each pad. To know those fields and their mapping, run the `padHelper.py` script under [src](./src). Run it first with `-h` flag to know the options.
+> _This is a placeholder. Replace the text below with your personal learning summary._
+During this course, I learned the fundamentals of web development and project design.
+I gained hands-on experience with HTML, CSS, JavaScript and strengthened my skills in 
+problem-solving, teamwork, documentation, and delivering real-world project solutions.
 
 
-### size Block:
+<h2 style="color:#333;"> Projects Completed </h2>
+<div align="left" style="margin: 20px; font-size: 16px;">
 
-The size block used in the pad section or the macros section could be represented in one of the following forms:
+<p><strong><a href="#project1">Project 1:</a></strong> &lt;!-- Add project title → --&gt;</p>
 
-1. Doesn't exist: The size is considered implicit in case of connection and `1` in case of declaration.
-2. `"size": <number>` The number is used as the size.
-3. `"size": {"start": <the start bit>, "offset": the offset}` The object description is to create a bus `[start+offset-1:start]`.
+<p><strong><a href="#project2">Project 2:</a></strong> &lt;!-- Add project title → --&gt;</p>
 
-### Source Block:
+<p><strong><a href="#project3">Project 3:</a></strong> &lt;!-- Add project title → --&gt;</p>
 
-The source (input/output) block could be described in any of the following ways:
+<p><em>(You can add more projects as needed)</em></p>
 
-1. `"input":["","",""]` list of string(s)
-2. `"input":[{"name":<name of the connection>,"size": <size of the connection>},...]` list of objects that describe the name and size of the connections. Please check this [section](#size-block) to know the different size representations.
+</div>
 
-### Supported Pad Types
+<!-- Project 1 -->
+<h3 id="project1">Project 1: <!-- Add Project Title --></h3>
+<p>
+  This project involved designing and developing a basic functional module using the core concepts taught in the course.
+  It focused on understanding requirements, creating structured code, and implementing key features.
+</p>
+<p>
+  <a href="<!-- Add link to full report -->" target="_blank"><strong>→ View Full Project Report</strong></a>
+</p>
 
-To show a list of supported pad types in a given PADs libraries json use the script `padHelper` under [./src](./src). Use the `-h` flag for the possible options.
+<!-- Project 2 -->
+<h3 id="project2">Project 2: <!-- Add Project Title --></h3>
+<p>
+  This project expanded on intermediate concepts and required integrating multiple components to build a more complete solution.
+  It enhanced understanding of UI/UX design, modular coding, and testing.
+</p>
+<p>
+  <a href="<!-- Add link to full report -->" target="_blank"><strong>→ View Full Project Report</strong></a>
+</p>
+
+<!-- Project 3 -->
+<h3 id="project3">Project 3: <!-- Add Project Title --></h3>
+<p>
+  The final project showcased the practical application of all concepts learned throughout the course.  
+  It required planning, building, optimizing, and documenting a complete real-world project.
+</p>
+<p>
+  <a href="<!-- Add link to full report -->" target="_blank"><strong>→ View Full Project Report</strong></a>
+</p>
+
+<hr style="height:1px; border-top:1px solid #ccc; width:80%;" />
+
+
+## **References**
+
+- [Wikipedia](https://wikipedia.com)
+<!--you can add refrences over here in same syntax as above -->
+---
+
+
+## **Learnings from LST and SST**
+
+<!-- add your experiences over here -->
+> _This is a placeholder. Replace the text below with your personal learning from LST and SST sessions summary._
+LST and SST sessions helped me....
+---
+
+## **Community Services**
+
+<!-- add descreption in your own words -->
+
+During my internship period, I participated in multiple community-oriented activities .....<!-- add descreption in your own words -->
+
+### **Activities Involved**
+<!-- add the location where you given -->
+- **Blood Donation** – Donated blood and supported basic assistance tasks during the camp.
+  
+ <!-- add the location where you have panted -->
+- **Tree Plantation Drive** – Participated by planting trees and contributing to environmental improvement.
+
+  <!-- add the location where you helped -->
+- **Helping Elder Citizens** – Assisted two elderly individuals with simple daily tasks and provided support where needed. 
+
+<!-- you can write impacts according to your experience in your words-->
+
+### **Impact / Contribution**
+
+- Helped create a supportive environment during the blood donation camp. <!-- add the location where you given -->
+- Actively participated in promoting a greener and cleaner surroundings.
+- Offered personal assistance to elder citizens, strengthening community bonds.
+- Improved skills in communication, coordination, and social responsibility.
+
+### **Photos**
+
+<!-- add your photos below -->
+<!-- change url below with your image urls (inside  src='')-->
+
+- These are just placeholder (sample) images <!-- remove this line -->
+
+<div align="center">
+<img src="https://media.licdn.com/dms/image/v2/D561FAQEJNBia4UCa5w/feedshare-document-images_800/B56Zm5b6SJJkAg-/1/1759752731458?e=1766016000&v=beta&t=7GABy91-0FNbir386wPdJ-Grr385JzS3tR5LQIw1CWg" alt="Community Service Photo 1" width="30%">
+<img src="https://media.licdn.com/dms/image/v2/D561FAQEJNBia4UCa5w/feedshare-document-images_800/B56Zm5b6SJJkAg-/2/1759752731458?e=1766016000&v=beta&t=6RfJQWWqlQUPcCvDnQNW7kR6yf7w-wPDsIPxum409ck" alt="Community Service Photo 2" width="30%">
+<img src="https://media.licdn.com/dms/image/v2/D561FAQEJNBia4UCa5w/feedshare-document-images_800/B56Zm5b6SJJkAg-/3/1759752731458?e=1766016000&v=beta&t=yWaunKdRdLUKBLbmM3UjRYYz-_GSCfWEQ3_R7dW0xLM" alt="Community Service Photo 3" width="30%">
+</div>
+
+---
+
+## **Certificate**
+
+The internship certificate serves as an official acknowledgment of the successful completion of my training period. It will be issued by the organization upon fulfilling all required tasks and meeting the performance expectations of the program. The certificate validates the skills, experience, and contributions made during the internship.
+
+<!-- add your certificate image url below (inside src='')-->
+
+<p align="center">
+<img src="https://github.com/Lord-Rahul/Practice-Programs/blob/main/react/1/public/Gemini_Generated_Image_a6w8rda6w8rda6w8.png?raw=true" alt="Internship Certificate" width="80%">
+</p>
+
+---
+
+## **Acknowledgments**
+
+<!-- you can add Acknowledgments over here in same syntax as below . eg trainer name , company name , role etc -->
+
+- [Prof. Radhakumari Challa](https://www.linkedin.com/in/prof-radhakumari-challa-a3850219b) , Executive Director and Founder - [SURE Trust](https://www.suretrustforruralyouth.com/)
+
