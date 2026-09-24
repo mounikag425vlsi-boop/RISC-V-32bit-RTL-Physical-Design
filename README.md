@@ -18,95 +18,118 @@
 
 <h2 style = "color:#333;"> Student Details </h2>
 <div align = "left" style ="margin: 20px; font-size: 16px;">
-    <p><strong>Name:</strong> <!--- Add your name---> </p>
-    <p><strong>Email ID:</strong> <!--- Add your mail id ---> </p>
-    <p><strong>College Name:</strong> <!--- Add your college name---> </p>
-    <p><strong>Branch/Specialization :</strong> <!--- Add your branch name---> </p>
-    <p><strong>College ID:</strong> <!--- Add your college ID---> </p>
+    <p><strong>Name:</strong> <!--- V.MOUNIKA---> </p>
+    <p><strong>Email ID:</strong> <!--- mounikag425vlsi@gmail.com ---> </p>
+    <p><strong>College Name:</strong> <!--- ANURAG Engineering College---> </p>
+    <p><strong>Branch/Specialization :</strong> <!--- HYDERABAD---> </p>
+    <p><strong>College ID:</strong> <!--- 12PQ1D5715---> </p>
 </div>
 
 <hr style="border: 0; border-top: 1px solid #ccc; width: 80%;" />
 
 <h2 style="color:#333;"> Course Details </h2>
 <div align="left" style="margin: 20px; font-size: 16px;">
-    <p><strong>Course Opted:</strong> <!--- Add your course name---> </p>
-    <p><strong>Instructor Name:</strong> <!--- Add your instructor name---> </p>
+    <p><strong>Course Opted:</strong> <!--- Physical Design---> </p>
+    <p><strong>Instructor Name:</strong> <!--- Prof. Radhakumari Challa---> </p>
 </div>
 <div align="left" style="margin: 20px; font-size: 16px;">
-    <p><strong>Duration:</strong> <!--- Durations in months---> </p>
+    <p><strong>Duration:</strong> <!--- 6 months---> </p>
 
 <hr style="border: 0; border-top: 1px solid #ccc; width: 80%;" />
 
 <h2 style="color:#333;"> Trainer Details </h2>
 <div align="left" style="margin: 20px; font-size: 16px;">
 
-<p><strong>Trainer Name:</strong> <!–– Add trainer name ––></p>
-<p><strong>Trainer Email ID:</strong> <!–– Add trainer email ––></p>
-<p><strong>Trainer Designation:</strong> <!–– Add designation along with company––></p>
+<p><strong>Trainer Name:</strong> <!–– VEERAMANI SIR ––></p>
+<p><strong>Trainer Email ID:</strong> <!–– veeramani_r@outlook.com ––></p>
+<p><strong>Trainer Designation:</strong> <!–– Staff Engineer at Synopsys
+
+––></p>
 
 <hr style="border: 0; border-top: 1px solid #ccc; width: 80%;" />
 
 ## **Table of Contents**
-- [Course Learning](#course-learning-to-be-edited-by-student)
-- [Projects Completed](#projects-completed)
-- [Project Introduction](#project-introduction)
-- [Technologies Used](#technologies-used)
-- [Roles and Responsibilities](#roles-and-responsibilities)
-- [Project Report](#project-report)
-- [Learnings from LST & SST](#learnings-from-lst--sst)
-- [Community Services](#community-services)
-- [Certificate](#certificate)
-- [Acknowledgments](#acknowledgments)
-
+Course Learning
+Projects Completed
+Project Introduction
+Technologies Used
+Roles and Responsibilities
+Project Report
+Learnings from LST & SST
+Community Services
+Certificate
+Acknowledgments
 <hr style="border: 0; border-top: 1px solid #ccc; width: 80%;" />
 
 
 ## Overall Learning 
 
-> _This is a placeholder. Replace the text below with your personal learning summary._
-During this course, I learned the fundamentals of web development and project design.
-I gained hands-on experience with HTML, CSS, JavaScript and strengthened my skills in 
-problem-solving, teamwork, documentation, and delivering real-world project solutions.
-
+> _During this course, I learned the fundamentals of VLSI Physical Design and gained hands-on experience with the complete RTL-to-GDSII flow.
+I learned how to work with Linux, Docker, TCL, OpenLane, OpenROAD, Yosys, OpenSTA, Magic, KLayout and the Sky130 PDK.
+I gained practical knowledge of:
+RISC-V architecture
+RTL design
+Logic synthesis
+Floor planning
+Placement
+Clock Tree Synthesis (CTS)
+Routing
+Static Timing Analysis (STA)
+Physical verification
+GDSII generation
+Git and GitHub
+The course also improved my problem-solving, documentation, communication, teamwork and presentation skills.> 
 
 <h2 style="color:#333;"> Projects Completed </h2>
 <div align="left" style="margin: 20px; font-size: 16px;">
 
-<p><strong><a href="#project1">Project 1:</a></strong> &lt;!-- Add project title → --&gt;</p>
+<p><strong><a href="#project1">Project 1:</a></strong> &lt;!-- Linux, OpenLane Environment and TCL Automation → --&gt;</p>
 
-<p><strong><a href="#project2">Project 2:</a></strong> &lt;!-- Add project title → --&gt;</p>
+<p><strong><a href="#project2">Project 2:</a></strong> &lt;!-- RISC-V 32-bit RTL Physical Design Flow → --&gt;</p>
 
-<p><strong><a href="#project3">Project 3:</a></strong> &lt;!-- Add project title → --&gt;</p>
+<p><strong><a href="#project3">Project 3:</a></strong> &lt;!-- RISC-V 32-bit RTL-to-GDSII Implementation → --&gt;</p>
 
 <p><em>(You can add more projects as needed)</em></p>
 
 </div>
 
 <!-- Project 1 -->
-<h3 id="project1">Project 1: <!-- Add Project Title --></h3>
+<h3 id="project1">Project 1: <!-- Linux, OpenLane Environment and TCL Automation --></h3>
 <p>
-  This project involved designing and developing a basic functional module using the core concepts taught in the course.
-  It focused on understanding requirements, creating structured code, and implementing key features.
+ This project focused on understanding the Linux environment and setting up the OpenLane physical design environment. I learned how to use the Linux terminal, Docker containers, TCL scripts and OpenLane configuration files. </p>
+<p> I also learned how the Sky130 PDK is integrated with the physical design flow and how TCL is used for automation and configuration.
 </p>
 <p>
   <a href="<!-- Add link to full report -->" target="_blank"><strong>→ View Full Project Report</strong></a>
 </p>
 
 <!-- Project 2 -->
-<h3 id="project2">Project 2: <!-- Add Project Title --></h3>
+<h3 id="project2">Project 2: <!-- RISC-V 32-bit RTL Physical Design Flow --></h3>
 <p>
-  This project expanded on intermediate concepts and required integrating multiple components to build a more complete solution.
-  It enhanced understanding of UI/UX design, modular coding, and testing.
+ This project focused on implementing a 32-bit RISC-V RTL design through the physical design flow using OpenLane. The project helped me understand how an RTL design is converted into a gate-level netlist and then physically implemented.
 </p>
 <p>
   <a href="<!-- Add link to full report -->" target="_blank"><strong>→ View Full Project Report</strong></a>
 </p>
 
 <!-- Project 3 -->
-<h3 id="project3">Project 3: <!-- Add Project Title --></h3>
+<h3 id="project3">Project 3: <!-- RISC-V 32-bit RTL-to-GDSII Implementation --></h3>
 <p>
-  The final project showcased the practical application of all concepts learned throughout the course.  
-  It required planning, building, optimizing, and documenting a complete real-world project.
+  This project involved the complete RTL-to-GDSII implementation of a RISC-V based design using OpenLane and the Sky130 PDK. The design used the <strong>picorv32.v</strong> RTL source together with the OpenLane configuration and pin-order files.
+    Parameter	            Value
+Design Name	                picorv32
+Clock Port	                 clk
+Clock Period	             10 ns
+Synthesis Clock Uncertainty	 1.5 ns
+CTS Clock Uncertainty	     0.5 ns
+Timing Derate	              3%
+Input Delay	                  5 ns
+Output Delay	              5 ns
+Core Utilization	          60%
+Aspect Ratio	              0.7
+Metal Layer	                  Metal4
+PDN Core Ring	              Enabled
+PDK	                          Sky130
 </p>
 <p>
   <a href="<!-- Add link to full report -->" target="_blank"><strong>→ View Full Project Report</strong></a>
@@ -118,15 +141,30 @@ problem-solving, teamwork, documentation, and delivering real-world project solu
 ## **References**
 
 - [Wikipedia](https://wikipedia.com)
-<!--you can add refrences over here in same syntax as above -->
+<!--RISC-V International
+OpenLane
+OpenROAD
+Yosys
+SURE Trust -->
 ---
 
 
 ## **Learnings from LST and SST**
 
 <!-- add your experiences over here -->
-> _This is a placeholder. Replace the text below with your personal learning from LST and SST sessions summary._
-LST and SST sessions helped me....
+> _The LST and SST sessions helped me improve my technical as well as professional skills.
+I learned the importance of:
+Communication
+Teamwork
+Time management
+Professional responsibility
+Problem-solving
+Leadership
+Documentation
+Presentation skills
+Taking ownership of assigned work
+Working effectively with others
+These sessions helped me understand how technical knowledge and professional skills are important for building a successful career.
 ---
 
 ## **Community Services**
@@ -139,20 +177,23 @@ During my internship period, I participated in multiple community-oriented activ
 <!-- add the location where you given -->
 - **Blood Donation** – Donated blood and supported basic assistance tasks during the camp.
   
- <!-- add the location where you have panted -->
-- **Tree Plantation Drive** – Participated by planting trees and contributing to environmental improvement.
+ <!-- HYDERABAD -->
+- **Tree Plantation Drive** – Participated in tree plantation and contributed towards creating a greener and cleaner environment.
 
-  <!-- add the location where you helped -->
-- **Helping Elder Citizens** – Assisted two elderly individuals with simple daily tasks and provided support where needed. 
+  <!-- HYDERABAD -->
+- **Helping Elder Citizens** – Assisted elderly citizens with simple daily activities and provided support where required. 
 
 <!-- you can write impacts according to your experience in your words-->
 
 ### **Impact / Contribution**
 
-- Helped create a supportive environment during the blood donation camp. <!-- add the location where you given -->
-- Actively participated in promoting a greener and cleaner surroundings.
-- Offered personal assistance to elder citizens, strengthening community bonds.
-- Improved skills in communication, coordination, and social responsibility.
+- Helped create a supportive environment during the blood donation camp. <!--HYDERABAD -->
+- Contributed to a blood donation initiative.
+Participated in environmental improvement through tree plantation.
+Assisted elderly citizens with daily activities.
+Improved communication and coordination skills.
+Developed a stronger sense of social responsibility.
+
 
 ### **Photos**
 
@@ -171,8 +212,8 @@ During my internship period, I participated in multiple community-oriented activ
 
 ## **Certificate**
 
-The internship certificate serves as an official acknowledgment of the successful completion of my training period. It will be issued by the organization upon fulfilling all required tasks and meeting the performance expectations of the program. The certificate validates the skills, experience, and contributions made during the internship.
-
+The internship certificate serves as official acknowledgment of the successful completion of my SURE ProEd training program.
+It recognizes the technical learning, project work, community participation and overall contribution made during the program.
 <!-- add your certificate image url below (inside src='')-->
 
 <p align="center">
@@ -183,7 +224,10 @@ The internship certificate serves as an official acknowledgment of the successfu
 
 ## **Acknowledgments**
 
-<!-- you can add Acknowledgments over here in same syntax as below . eg trainer name , company name , role etc -->
+<!-- I sincerely thank Prof. Radhakumari Challa, Executive Director and Founder of SURE Trust, for providing me with the opportunity to participate in the SURE ProEd program.
+I am grateful for the practical exposure to VLSI Physical Design, RISC-V, OpenLane and open-source EDA tools.
+Prof. Radhakumari Challa – Executive Director and Founder, SURE Trust
+-->
 
 - [Prof. Radhakumari Challa](https://www.linkedin.com/in/prof-radhakumari-challa-a3850219b) , Executive Director and Founder - [SURE Trust](https://www.suretrustforruralyouth.com/)
 
